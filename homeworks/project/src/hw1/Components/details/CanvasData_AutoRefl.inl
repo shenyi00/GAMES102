@@ -12,10 +12,13 @@ struct Ubpa::USRefl::TypeInfo<CanvasData>
 
     static constexpr FieldList fields = {
         Field{"points", &CanvasData::points},
+        Field{"fitted_points",&CanvasData::fitted_points},
         Field{"scrolling", &CanvasData::scrolling},
         Field{"opt_enable_grid", &CanvasData::opt_enable_grid},
         Field{"opt_enable_context_menu", &CanvasData::opt_enable_context_menu},
         Field{"adding_line", &CanvasData::adding_line},
+        Field{"opt_enable_insert",&CanvasData::opt_enable_insert},
+        Field{"opt_choice_0_or_1",&CanvasData::opt_choice_0_or_1},
     };
 };
 
